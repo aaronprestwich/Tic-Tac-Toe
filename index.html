@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="board.css">    
+</head>
+<body class="container bg-dark p-5 text-center text-light">
+
+    <div>
+        <div class="row">
+            <!-- Title and turn order -->
+            <div class="col">
+                <h1 class="title">Tic Tac Toe</h1>
+                <h4 id="whose-turn">It is X's turn</h4>
+            </div>
+            <!-- Alert -->
+            <div class="container-fluid alert"></div>
+        </div>
+        <!-- Board -->
+        <div class="row">
+            <div class="col">
+                <div class="board-grid bg-light">
+                    <div class="board-tile bg-dark 1" id="top-l"></div>
+                    <div class="board-tile bg-dark 2" id="top-c"></div>
+                    <div class="board-tile bg-dark 3" id="top-r"></div>
+                    <div class="board-tile bg-dark 4" id="mid-l"></div>
+                    <div class="board-tile bg-dark 5" id="mid-c"></div>
+                    <div class="board-tile bg-dark 6" id="mid-r"></div>
+                    <div class="board-tile bg-dark 7" id="bot-l"></div>
+                    <div class="board-tile bg-dark 8" id="bot-c"></div>
+                    <div class="board-tile bg-dark 9" id="bot-r"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Reset text and button -->
+        <div class="row">
+            <div class="col">
+                <div id="winner-div"></div>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="col">
+                <button type="button" class="btn btn-light">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="tic-tac-toe.js"></script>
+</body>
+</html>
